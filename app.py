@@ -23,7 +23,7 @@ selected = option_menu(
     menu_title=None,
     options=["Home", "Stats","Learn"],
     icons=["house", "sun", "lightbulb"],
-    orientation="horizontal",
+    orientation="vertical",
 )
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -65,7 +65,7 @@ if selected == "Home":
         img_array = preprocess_input(img_array)
         return img_array, img
 
-    st.subheader("Zero Trash with AI", divider=True)
+    st.subheader("Zero Waste with AI", divider=True)
     st.success("Take ur trash a photo and then 👇👇")
     col1, col2 = st.columns([1, 2], border=True)
     with col1:
@@ -160,3 +160,4 @@ elif selected == "Learn":
     videos.video("https://www.youtube.com/watch?v=HgEo7YnvJs0&pp=ygUad2FzdGUgbWFuYWdlbWVudCB0dXRvcmlhbHM%3D")
 
     videos.video("https://www.youtube.com/watch?v=Qyu-fZ8BOnI&pp=ygUad2FzdGUgbWFuYWdlbWVudCB0dXRvcmlhbHM%3D")
+
