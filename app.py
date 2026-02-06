@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 from pathlib import Path
 import plotly.express as px
 
-st.set_page_config(page_title="Sortiva AI", page_icon="random", layout="wide")
+st.set_page_config(page_title="Sortiva AI", page_icon="random", layout="centered")
 
 hide_streamlit_style = """ 
             <style>
@@ -158,4 +158,5 @@ elif selected == "Learn":
 
     videos = st.expander(label="Video Tutorials", expanded=True)
     videos.video("https://www.youtube.com/watch?v=HgEo7YnvJs0&pp=ygUad2FzdGUgbWFuYWdlbWVudCB0dXRvcmlhbHM%3D")
+
     videos.video("https://www.youtube.com/watch?v=Qyu-fZ8BOnI&pp=ygUad2FzdGUgbWFuYWdlbWVudCB0dXRvcmlhbHM%3D")
